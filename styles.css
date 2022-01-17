@@ -1,0 +1,20 @@
+/* giving container and rows a height to demonstrate them. they naturally inherit the height of whatever is placed inside them */
+
+.container-fluid {
+  background-color: #6c2eb9;
+  height: 5rem;
+}
+
+.row {
+  background-color: #ff9232;
+  height: 4.7rem;
+}
+
+/* attribute selector is [] 
+ * is grabbing every class that starts with col-
+ */
+[class*="col-"] {
+  background-color: #00c3aa;
+  height: 4.2rem;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
