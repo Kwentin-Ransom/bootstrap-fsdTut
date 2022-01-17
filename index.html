@@ -13,35 +13,22 @@
 
     <title>Hello, world!</title>
   </head>
-  <body>
+  <body class="signin-body">
 
-    <!-- container class takes up the viewpoint based on width percentages -->
-    <!-- container-fluid class tkaes up the viewpoint with the entire witdth -->
-    <div class="container-fluid">
+    <div class="container signin-container">
       <div class="row">
-        <!-- you add the content inside a column. not inside the row or container -->
-        <!-- this a column class with size small and width is 6 -->
-        <div class="col-sm-6">
-          <!-- you can nest a row inside of a column likeso -->
-          <!-- the columns must add up to 12 inside of a row -->
-          <!-- using col-6 means that regardless of the viewport's size, those columns will appear inline instead of block -->
-          <div class="row">
-            <div class="col-6"></div>
-            <div class="col-4"></div>
-            <div class="col-2"></div>
+        <!-- putting a col class on both sides of col 8 will take up even spacing on it -->
+        <div class="col"></div>
+        <div class="col-8">
+          <div class="card signin-card">
+            <div class="card-body">
+              This is some text within a card body.
+            </div>
           </div>
         </div>
-        <div class="col-sm-6">Col 2</div>
+        <div class="col"></div>
       </div>
-      <div class="row">
-        <div class="col-sm-6 col-lg-4">Col 3</div>
-        <div class="col-sm-6 col-lg-4">Col 4</div>
-        <div class="col-sm-12 col-lg-4">Col 5</div>
-      </div>
-
     </div>
-
-
 
 
     

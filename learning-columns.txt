@@ -1,0 +1,83 @@
+
+------- Convert to .html file to be used ----------
+
+
+********** HTML ***********
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!-- chose .min.css since it loads faster in the web browser -->
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <!-- container class takes up the viewpoint based on width percentages -->
+    <!-- container-fluid class tkaes up the viewpoint with the entire witdth -->
+    <div class="container-fluid">
+      <div class="row">
+        <!-- you add the content inside a column. not inside the row or container -->
+        <!-- this a column class with size small and width is 6 -->
+        <div class="col-sm-6">
+          <!-- you can nest a row inside of a column likeso -->
+          <!-- the columns must add up to 12 inside of a row -->
+          <!-- using col-6 means that regardless of the viewport's size, those columns will appear inline instead of block -->
+          <div class="row">
+            <div class="col-6"></div>
+            <div class="col-4"></div>
+            <div class="col-2"></div>
+          </div>
+        </div>
+        <div class="col-sm-6">Col 2</div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-lg-4">Col 3</div>
+        <div class="col-sm-6 col-lg-4">Col 4</div>
+        <div class="col-sm-12 col-lg-4">Col 5</div>
+      </div>
+
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+
+
+******** CSS *********
+/* giving container and rows a height to demonstrate them. they naturally inherit the height of whatever is placed inside them */
+
+.container-fluid {
+  background-color: #6c2eb9;
+  height: 5rem;
+}
+
+.row {
+  background-color: #ff9232;
+  height: 4.7rem;
+}
+
+/* attribute selector is [] 
+ * is grabbing every class that starts with col-
+ */
+[class*="col-"] {
+  background-color: #00c3aa;
+  height: 4.2rem;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
