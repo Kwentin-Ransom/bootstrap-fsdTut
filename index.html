@@ -22,7 +22,26 @@
         <div class="col-8">
           <div class="card signin-card">
             <div class="card-body">
-              This is some text within a card body.
+              <img src="assets/akatsuki.png" class="img-fluid signin-img">
+              <!-- creating a class on the form tag to control the entire parent of the form and not just the child ie. changing the width of the input fields -->
+              <form class="signin-form">
+                <div class="mb-3">
+                  <!-- label tag will make a heading (or title above the input field) for the input field  -->
+                  <!-- <label for="exampleInputEmail1" class="form-label">Email address</label> -->
+                  <!-- make a personalized id -->
+                  <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Email">
+                  <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                </div>
+                <div class="mb-3">
+                  <!-- <label for="exampleInputPassword1" class="form-label">Password</label> -->
+                  <input type="password" class="form-control" id="passwordInput" placeholder="Password"> 
+                </div>
+                <!-- <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button> -->
+              </form>
             </div>
           </div>
         </div>

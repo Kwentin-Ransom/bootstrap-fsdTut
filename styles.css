@@ -17,3 +17,19 @@ body.signin-body {
   -webkit-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.5);
 }
+
+img.signin-img {
+  /* rem: refers to the root element (2 times larger than the root font of the browser */
+  /* padding: top right bottom left */
+  padding: 0 2rem 2rem;
+  margin: auto;
+  /* display: block makes the content stacks on top of each other */
+  display: block;
+  width: 50%;
+}
+
+form.signin-form {
+  /* this reduces the width of the form taking up the full length of the card */
+  max-width: 350px;
+  margin: auto;
+}
