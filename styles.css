@@ -33,3 +33,25 @@ form.signin-form {
   max-width: 350px;
   margin: auto;
 }
+
+button.signin-btn {
+  color: #ffffff;
+  background-color: #902020;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* i want to have "need help?" align on the right of the form-check ... not sure how */
+a.signin-help {
+  text-decoration: none;
+  text-align: right;
+  display: inline-block;
+}
+
+a.create-new-account {
+  font-size: 1.2rem;
+  text-align: center;
+  /* adding a display: block allows this text to be centered  */
+  display: block;
+  margin-top: 15px;
+}
