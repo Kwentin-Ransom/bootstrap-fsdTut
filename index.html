@@ -19,10 +19,12 @@
       <div class="row">
         <!-- putting a col class on both sides of col 8 will take up even spacing on it -->
         <div class="col"></div>
-        <div class="col-8">
+        <!-- adding bootstrap class 'md' says the viewports medium n larger with have a size of 8 -->
+        <!-- attaching col-sm-12 will change the width to 12 when the viewport hits a small state -->
+        <div class="col-sm-12 col-md-8">
           <div class="card signin-card">
             <div class="card-body">
-              <img src="assets/akatsuki.png" class="img-fluid signin-img">
+              <img src="assets/akatsuki-resized.png" class="img-fluid signin-img">
               <!-- creating a class on the form tag to control the entire parent of the form and not just the child ie. changing the width of the input fields -->
               <form class="signin-form">
                 <div class="mb-3">
